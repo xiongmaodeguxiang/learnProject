@@ -6,8 +6,6 @@ package com.xh.zl.suanfa;
  * @Date: 2019/12/4 15:05
  */
 public class Lru {
-
-    
     /**
      * 链表使用节点Node
      */
@@ -16,7 +14,12 @@ public class Lru {
         Object value;
         Node pre;
         Node next;
+        public Node(Object key,Object value){
+            this.key = key;
+            this.value = value;
+        }
     }
+
 }
 
 
