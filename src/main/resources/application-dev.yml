@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.18.10.226:3306/wemedia?serverTimezone=UTC&& useUnnicode=true&characterEncoding=utf-8
+    username: wemedia
+    password: wemedia2019!!
+mybatis:
+  mapper-locations: classpath*:mybatis/**/*.xml
+  type-aliases-package: com.xh.zl.entity
+  configuration:
+    cache-enabled: true
+
+service:
+  name: zhangsan
+  age: 23
